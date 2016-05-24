@@ -1,3 +1,4 @@
+//he añadido un comentario...
 <?php
 class ValidarPasswordTest extends PHPUnit_Framework_TestCase {
     public function testValidLength() {
