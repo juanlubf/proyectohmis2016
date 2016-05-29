@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="HelloWorld" default="welcome" basedir="." description="a demo project">
- <property name="message" value="Hello World!"/>
- <target name="welcome">
-  <echo msg="${message}"/>
+<project name="HMIS2016">
+ <target name="phpunittests">
+  <phpunit haltonfailure="true" haltonerror="true"
+           bootstrap="my_bottstrap.php" printsummary="true">
+   <batchtest>
+    <filseset dir="${testdir}">
+     <include name="**/*Test.php"/>
+    </filseset>
+   </batchtest>
+  </phpunit>
  </target>
 </project>
