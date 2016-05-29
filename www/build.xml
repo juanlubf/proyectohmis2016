@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="HelloWorld" default="welcome" basedir="." description="a demo project">
- <property name="message" value="Hello World!"/>
- <target name="welcome">
-  <echo msg="${message}"/>
- </target>
+<project name="HMIS2016" default="inicio" basedir=".">
+	<property name="mensaje" value="Comenzando construccion"/>
+	<property name="buildDir" value="build"/>
+	<property name="srcDir" value="src"/>
+ 
+ 	<target name="inicio">
+		<echo msg="${mensaje}"/>
+	</target>
+ 
+	<target name="test">
+		<phpunit haltonfailure="true" printsummary="true">
+			<batchtest>
+					<filseset dir="./tests">
+						<include name="*Test.php"/>
+					</filseset>
+			</batchtest>
+		</phpunit>
+	</target>
+	
+	<filseset dir="srcfiles">
+		<include name="*"/>
+		<exclude name="*.tmp"/>
+	</filseset>
+	
+	<target name="build" depends="test">
+		<echo msg="Copiando al directorio build..."/>
+		<copy todir="${buildDir}">
+			<filseset refid="srcfiles"/>
+		</copy>
+	</target>
+
 </project>
