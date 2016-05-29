@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="HMIS2016" default="inicio" basedir=".">
+<project name="HMIS2016" default="inicio">
 	<property name="mensaje" value="Comenzando construccion"/>
 	<property name="buildDir" value="build"/>
 	<property name="srcDir" value="src"/>
