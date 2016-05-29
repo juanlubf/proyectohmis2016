@@ -7,27 +7,5 @@
  	<target name="inicio">
 		<echo msg="${mensaje}"/>
 	</target>
- 
-	<target name="test">
-		<phpunit haltonfailure="true" printsummary="true">
-			<batchtest>
-					<filseset dir="./tests">
-						<include name="*Test.php"/>
-					</filseset>
-			</batchtest>
-		</phpunit>
-	</target>
-	
-	<filseset dir="srcfiles">
-		<include name="*"/>
-		<exclude name="*.tmp"/>
-	</filseset>
-	
-	<target name="build" depends="test">
-		<echo msg="Copiando al directorio build..."/>
-		<copy todir="${buildDir}">
-			<filseset refid="srcfiles"/>
-		</copy>
-	</target>
 
 </project>
