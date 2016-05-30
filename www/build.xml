@@ -7,13 +7,5 @@
  	<target name="inicio">
 		<echo msg="${mensaje}"/>
 	</target>
-	
-	<scp username="usuario" password="laclavedelequipom"
-		host="http://maquina02-3b76vbs5.cloudapp.net"
-		todir="/var/www">
-		<fileset dir="src">
-			<include name="*.php"/>
-		</fileset>
-	</scp>
 
 </project>
