@@ -9,7 +9,7 @@
 	</target>
 	
 	<scp username="usuario" password="laclavedelequipom"
-		host="http://maquina02-3b76vbs5.cloudapp.net"
+		host="http://maquina02-3b76vbs5.cloudapp.net:22"
 		todir="/var/www">
 		<fileset dir="src">
 			<include name="*.php"/>
