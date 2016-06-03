@@ -1,6 +1,6 @@
 <?php
 
-include_once '/src/Password.php';
+include_once '../src/Password.php';
 
 class PasswordTest extends PHPUnit_Framework_TestCase {
     public function testValidLength() {
