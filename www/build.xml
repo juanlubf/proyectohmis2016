@@ -9,7 +9,7 @@
     <property name="passw" value=""/>
 	<property name="sql.file" value="src/sql/Creacion bd.sql"/>
  
- 	<target name="Inicio">
+ 	<!--<target name="Inicio">
 		<echo msg="Comenzando construccion"/>
 		<exec command="mysql -u${user} -p${passw} -h${host} -e &quot;source ${sql.file}&quot; ${db}"/>
 	</target>
@@ -71,6 +71,13 @@
 				<include name="**/*.php"/>
 			</fileset>
 		</zip>
-	</target>
+	</target>-->
+	<target name="Empaquetado" >
+		<echo msg="Comenzando empaquetado"/>
+		<zip destfile="build/phpfiles.zip">
+			<fileset dir="${srcDir}">
+				<include name="**/*.php"/>
+			</fileset>
+		</zip>
 
 </project>
