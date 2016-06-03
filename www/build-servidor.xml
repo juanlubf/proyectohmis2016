@@ -6,7 +6,7 @@
     <property name="host" value="localhost"/>
     <property name="db" value="webapp"/>
     <property name="user" value="root"/>
-    <property name="passw" value=""/>
+    <property name="passw" value="laclavedemysql"/>
 	<property name="sql.file" value="src/sql/Creacion bd.sql"/>
  
  	<target name="Inicio">
