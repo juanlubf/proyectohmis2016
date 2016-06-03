@@ -8,7 +8,7 @@
   <title>Inicio</title>
   <link rel="stylesheet" href="css/style.css">
   <!--[if lt IE 9]<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <?php include 'Utilidades/conexionBD.php'?>
+  <?php include '/Utilidades/conexionBD.php'?>
 </head>
 <body>
   <section class="container">
