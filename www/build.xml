@@ -72,12 +72,13 @@
 			</fileset>
 		</zip>
 	</target>-->
-	<target name="Empaquetado" >
+	<target name="Empaquetado">
 		<echo msg="Comenzando empaquetado"/>
 		<zip destfile="build/phpfiles.zip">
 			<fileset dir="${srcDir}">
 				<include name="**/*.php"/>
 			</fileset>
 		</zip>
+	</target>
 
 </project>
