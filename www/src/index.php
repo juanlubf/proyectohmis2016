@@ -24,6 +24,8 @@
           </label>
         </p>
         <p class="submit"><input type="submit" name="login" value="Entrar"></p>
+        <p>¿Aún no tienes cuenta?</p>
+        <p class="submit"><input type="submit" name="registro" value="Registrarse"></p>
       </form>
     </div>
 
