@@ -23,7 +23,9 @@
 					<include name="*Test.php"/>
 				</fileset>
 			</batchtest>
+			<formatter type="xml" todir="reports" outfile="prueba.xml"/>
 		</phpunit>
+		<phpunitreport infile="www/reports/prueba.xml" format="frames" todir="www/reports/tests"/>
 	</target>
 
 	<target name="Cobertura" depends="Pruebas unitarias">
@@ -45,18 +47,12 @@
 			</batchtest>
 		</phpunit>
 
-		<mkdir dir="reports/tests"/>
-		<mkdir dir="reports/coverage"/>
-
-		<phpunitreport infile="reports/testsuites.xml"
-					   format="frames" todir="reports/tests"/>
-		<coverage-report outfile="reports/coverage.xml">
-			<report toDir="reports/coverage" title="Phing" usesorttable="true"/>
-		</coverage-report>
+		
 	</target>
 
 	<target name="phpDocumentor" depends="Cobertura">
 		<mkdir dir="docs"/>
+		<echo msg="Generando documentacion"/>
 		<exec command="phpdoc -d ./reports -t ./docs --template responsive" />
 	</target>
 
