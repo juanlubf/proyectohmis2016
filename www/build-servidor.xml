@@ -25,7 +25,7 @@
 			</batchtest>
 			<formatter type="xml" todir="reports" outfile="prueba.xml"/>
 		</phpunit>
-		<phpunitreport infile="www/reports/prueba.xml" format="frames" todir="www/reports/tests"/>
+		<phpunitreport infile="www/reports/prueba.xml" format="frames" todir="www/reports"/>
 	</target>
 
 	<target name="Cobertura" depends="Pruebas unitarias">
