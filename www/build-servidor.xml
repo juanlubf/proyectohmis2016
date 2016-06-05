@@ -57,11 +57,7 @@
 
 	<target name="phpDocumentor" depends="Cobertura">
 		<mkdir dir="docs"/>
-		<phpdoc2 destdir="docs" title="Phing API Documentation" >
-			<fileset dir="reports">
-				<include name="**/*.php"/>
-			</fileset>
-		</phpdoc2>
+		<exec command="phpdoc -d ./reports -t ./docs --template responsive" />
 	</target>
 
 	<target name="Empaquetado" depends="phpDocumentor">
