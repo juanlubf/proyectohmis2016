@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snapshot methodcount="1" methodscovered="1" statementcount="2" statementscovered="2" totalcount="3" totalcovered="3">
+  <package name="default" methodcount="1" methodscovered="1" statementcount="2" statementscovered="2" totalcount="3" totalcovered="3">
+    <class name="Password" methodcount="1" methodscovered="1" statementcount="2" statementscovered="2" totalcount="3" totalcovered="3">
+      <sourcefile name="Password.php" sourcefile="C:\xampp\htdocs\www\src\Password.php">
+        <sourceline coveredcount="0">&lt;?php</sourceline>
+        <sourceline coveredcount="0"></sourceline>
+        <sourceline coveredcount="0" startclass="1">class Password</sourceline>
+        <sourceline coveredcount="0">{</sourceline>
+        <sourceline coveredcount="0">    const MIN_LENGTH = 7;</sourceline>
+        <sourceline coveredcount="0">    const MAX_LENGTH = 12;</sourceline>
+        <sourceline coveredcount="0"></sourceline>
+        <sourceline coveredcount="0">    public function validLength($password) {</sourceline>
+        <sourceline coveredcount="1">        $passLength = strlen($password);</sourceline>
+        <sourceline coveredcount="1">        return $passLength &gt;= self::MIN_LENGTH &amp;&amp; $passLength &lt;= self::MAX_LENGTH;</sourceline>
+        <sourceline coveredcount="0">    }</sourceline>
+        <sourceline coveredcount="0">}</sourceline>
+      </sourcefile>
+    </class>
+  </package>
+</snapshot>

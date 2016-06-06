@@ -1,14 +1,11 @@
-CREATE SCHEMA IF NOT EXISTS `webapp` DEFAULT CHARACTER SET utf8mb4 ;
-USE `webapp` ;
+CREATE SCHEMA IF NOT EXISTS webapp;
+USE webapp;
 
-DROP TABLE IF EXISTS 'webapp';
+DROP TABLE IF EXISTS Admin;
 
-CREATE TABLE IF NOT EXISTS `webapp`.`Admin`(
+CREATE TABLE IF NOT EXISTS Admin(
 	`usuario` VARCHAR(20) NOT NULL,
 	`passw` VARCHAR(40) NOT NULL,
 	`idAdmin` INT NOT NULL AUTO_INCREMENT,
-	PRIMARY KEY (`idAdmin`))
-	DEFAULT CHARACTER SET = UTF8
-;
-
+	PRIMARY KEY (`idAdmin`));
 INSERT INTO Admin(usuario, passw) VALUES ('admin', 'admin');
