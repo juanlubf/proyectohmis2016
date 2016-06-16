@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="HMIS2016" default="Empaquetado">
+	<property name="buildDir" value="build"/>
+	<property name="srcDir" value="src"/>
+	<property name="testDir" value="tests"/>
+    <property name="host" value="localhost"/>
+    <property name="db" value="webapp"/>
+    <property name="user" value="root"/>
+    <property name="passw" value="root"/>
+	<property name="sql.file" value="src/sql/Creacion bd.sql"/>
+	<property name="sql.dir" value="C:/xampp/mysql/bin/"/><!-- mysql.exe directory-->
+ 
+ 	<target name="Inicio">
+		<echo msg="Creando base de datos"/>
+		<exec command="${sql.dir}mysql -u${user} -p${passw} -h${host} -e &quot;source ${sql.file}&quot;" output="reports/testConn_out_2.log "/>
+	</target>
+
+	<target name="Pruebas unitarias" depends="Inicio">
+		<echo msg="Comenzando pruebas"/>
+		<phpunit haltonfailure="true" haltonerror="true" printsummary="true">
+			<batchtest>
+				<fileset dir="${testDir}">
+					<include name="*Test.php"/>
+				</fileset>
+			</batchtest>
+			<formatter type="xml" todir="reports" outfile="prueba.xml"/>
+		</phpunit>
+		<phpunitreport infile="reports/prueba.xml" format="frames" todir="reports"/>
+	</target>
+
+	<target name="Cobertura" depends="Pruebas unitarias">
+		<echo msg="Calculando cobertura"/>
+		<mkdir dir="reports"/>
+
+		<coverage-setup database="reports/coverage.db">
+			<fileset dir="${srcDir}">
+				<include name="**/*.php"/>
+			</fileset>
+		</coverage-setup>
+
+		<phpunit codecoverage="true" printsummary="true">
+			<formatter type="clover" todir="reports"/>
+			<batchtest>
+				<fileset dir="${testDir}">
+					<include name="**/*Test.php"/>
+				</fileset>
+			</batchtest>
+		</phpunit>
+
+		
+	</target>
+
+	<target name="phpDocumentor" depends="Cobertura">
+		<mkdir dir="docs"/>
+		<echo msg="Generando documentacion"/>
+		<exec command="phpdoc -d ./reports -t ./docs --template responsive" />
+	</target>
+
+	<target name="Empaquetado" depends="phpDocumentor">
+		<echo msg="Comenzando empaquetado"/>
+		<zip destfile="build/phpfiles.zip">
+			<fileset dir="${srcDir}">
+				<include name="**/*.php"/>
+			</fileset>
+		</zip>
+	</target>
+</project>
