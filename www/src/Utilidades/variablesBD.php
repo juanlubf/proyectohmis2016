@@ -3,6 +3,5 @@
 	
 	$host = "localhost";
 	$user = "root";
-	$password = "laclavedemysql";
+	$password = "";
 	$database = "webapp";
-?>
