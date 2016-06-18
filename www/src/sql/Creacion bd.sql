@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `webapp`.`User` (
 	`esAdmin` TINYINT(1) NULL DEFAULT 0,
 	PRIMARY KEY (`idUser`))
 	ENGINE = InnoDB;
-
+INSERT INTO User(password, nombre, esAdmin) VALUES ('admin', 'admin', TRUE );
 
 -- -----------------------------------------------------
 -- Table `webapp`.`Deck`
@@ -74,7 +74,6 @@ CREATE TABLE IF NOT EXISTS `webapp`.`Tipo_Vehiculo` (
 	PRIMARY KEY (`idTipo_Vehiculo`))
 	ENGINE = InnoDB;
 
-
 -- -----------------------------------------------------
 -- Table `webapp`.`Plaza`
 -- -----------------------------------------------------
@@ -99,7 +98,6 @@ CREATE TABLE IF NOT EXISTS `webapp`.`Plaza` (
 		ON DELETE NO ACTION
 		ON UPDATE NO ACTION)
 	ENGINE = InnoDB;
-
 
 -- -----------------------------------------------------
 -- Table `webapp`.`Reserva`
