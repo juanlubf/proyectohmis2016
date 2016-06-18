@@ -27,10 +27,6 @@
           <p class="submit"><input type="button" name="registro" value="Registrarse" onClick="location.href='panelRegistro.php';"/></p>
       </form>
     </div>
-
-      <!--<div class="login-help">
-          <p>¿Has olvidado tu contraseña? <a href="index.html">Click aquí para resetearla</a>.</p>
-      </div>-->
   </section>
 
   <?php include_once "scriptLogin.php";  ?>
