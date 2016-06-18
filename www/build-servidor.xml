@@ -11,7 +11,7 @@
  
  	<target name="Inicio">
 		<echo msg="Creando base de datos"/>
-		<exec command="mysql -u${user} -p${passw} -h${host} -e &quot;source ${sql.file}&quot;"/>
+		<exec command="mysql -u${user} -p${passw} -h${host} -e &quot;source ${sql.file}&quot;"  output="reports/testConn_out_2.log"/>
 	</target>
 
 	<target name="Pruebas unitarias" depends="Inicio">
