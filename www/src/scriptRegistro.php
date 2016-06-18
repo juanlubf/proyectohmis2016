@@ -11,7 +11,7 @@ if ($_POST) {
     $a = mysqli_real_escape_string($conexion, $_POST['user']);
     $p = mysqli_real_escape_string($conexion, $_POST['pass']);
 
-    $cadenaSQL = "insert into usuario(nombre, password) values ('$a', '$p');";
+    $cadenaSQL = "insert into user (nombre, password, esAdmin) values ('$a', '$p', FALSE);";
     $resultado = mysqli_query($conexion, $cadenaSQL);
     header('location: panelUsuario.php');
 }

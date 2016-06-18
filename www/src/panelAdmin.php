@@ -10,38 +10,26 @@
     <!--[if lt IE 9]<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
+<?php include_once 'scriptParking.php';
+global $suma;?>
 <section class="container">
-    <div class="login">
+    <div class="pAdmin">
         <h1>Configuración del parking</h1>
         <form method="post" action="">
-            <p><input type="text" name="user" value="" placeholder="Usuario o Email"></p>
-            <p><input type="password" name="password" value="" placeholder="Contraseña"></p>
-            <p class="remember_me">
-                <label>
-                    <input type="checkbox" name="remember_me" id="remember_me">
-                    Recordarme en este ordenador
-                </label>
-            </p>
-            <p class="submit"><input type="submit" name="login" value="Entrar"></p>
-            <p>¿Aún no tienes cuenta?</p>
-            <p class="submit"><input type="submit" name="registro" value="Registrarse"></p>
+            <p>Número total de plazas disponibles actualmente: <?php echo $suma[0];?></p>
+            <p><input type="button" value="Añadir planta" onclick="mostrar('addPlaza')"></p>
+            <p class="addPlaza">Plazas <input type="number">
+                <input type="submit" value="Confirmar" style="float: right;"></p>
+            <p><input type="button" name="volver" value="Volver" onclick="location.href='scriptLogout.php';"></p>
         </form>
     </div>
-
-    <!--<div class="login-help">
-        <p>¿Has olvidado tu contraseña? <a href="index.html">Click aquí para resetearla</a>.</p>
-    </div>-->
-    <p id="texto1"><a href="scriptLogout.php">Cerrar sesión</a></p>
 </section>
+
+<script>
+    function mostrar(str) {
+        document.getElementsByClassName(str)[0].style.display = 'block';
+    }
+</script>
 
 </body>
 </html>
-
-<?php
-/**
- * Created by PhpStorm.
- * User: Juanlu
- * Date: 16/06/2016
- * Time: 18:24
- */
-?>

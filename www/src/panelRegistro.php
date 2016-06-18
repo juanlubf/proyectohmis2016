@@ -24,8 +24,8 @@
             <p>Repita la contraseña<input type="password" name="pass2" maxlength="20">
                 <label id="er3" style="display: none;" >Las contraseñas no coinciden</label>
             </p>
-            <p class="submit"><input align="left" type="button" name="volver" value="Volver" onclick="location.href='index.php';">
-                <input align="right" type="button" name="registro" value="Registrarse" onclick="comprobar(this.form)"></p>
+            <p class="submit"><input style="float: left" type="button" name="volver" value="Volver" onclick="location.href='index.php';">
+                <input type="button" name="registro" value="Registrarse" onclick="comprobar(this.form)"></p>
         </form>
     </div>
 </section>
@@ -54,6 +54,5 @@
     }
 </script>
 <?php include_once 'scriptRegistro.php' ?>
-
 </body>
 </html>
