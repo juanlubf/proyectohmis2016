@@ -158,6 +158,9 @@ body {
 .login p {
   margin: 20px 0 0;
 }
+.login label {
+  color: #bd362f;
+}
 .login p:first-child {
   margin-top: 0;
 }
