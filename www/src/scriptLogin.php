@@ -6,7 +6,7 @@
  * Time: 18:47
  */
 
-include_once (dirname(__FILE__).'\Utilidades\conexionBD.php');
+include_once (dirname(__FILE__).DIRECTORY_SEPARATOR.'Utilidades'.DIRECTORY_SEPARATOR.'conexionBD.php');
 
 session_start(); //session_start() crea una sesión para ser usada mediante una petición GET o POST, o pasado por una cookie
 

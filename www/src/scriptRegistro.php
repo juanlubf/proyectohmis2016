@@ -7,7 +7,7 @@
  */
 
 if ($_POST) {
-    include_once (dirname(__FILE__).'\Utilidades\conexionBD.php');
+    include_once (dirname(__FILE__).DIRECTORY_SEPARATOR.'Utilidades'.DIRECTORY_SEPARATOR.'conexionBD.php');
     $a = mysqli_real_escape_string($conexion, $_POST['user']);
     $p = mysqli_real_escape_string($conexion, $_POST['pass']);
 
