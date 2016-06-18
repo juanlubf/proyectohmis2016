@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="HMIS2016" default="Empaquetado">
+<project name="HMIS2016" default="Despliegue">
 	<property name="buildDir" value="build"/>
 	<property name="srcDir" value="src"/>
 	<property name="testDir" value="tests"/>
