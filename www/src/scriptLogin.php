@@ -52,4 +52,3 @@ if(!isset($_SESSION['userid'])) { //para saber si existe o no ya la variable de 
     header('location: panelAdmin.php');
     //session_destroy();
 }
-
