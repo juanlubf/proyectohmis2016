@@ -21,7 +21,7 @@ function verificar_login($admin, $password, &$userid, &$esAdmin)
     global $conexion;
     $a = mysqli_real_escape_string($conexion, $admin);
     $p = mysqli_real_escape_string($conexion, $password);
-    $cadenaSQL = "select * from user where nombre='$a' and password='$p';";
+    $cadenaSQL = "select * from User where nombre='$a' and password='$p';";
     $resultado = mysqli_query($conexion, $cadenaSQL);
     $fila = $resultado->fetch_object();
     if ($fila != null) {
