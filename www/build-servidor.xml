@@ -59,8 +59,24 @@
 		<zip destfile="build/phpfiles.zip">
 			<fileset dir="${srcDir}">
 				<include name="**/*.php"/>
+				<include name="**/*.css"/>
+				<include name="**/*.scss"/>
 			</fileset>
 		</zip>
+	</target>
+
+	<target name="Despliegue" depends="Empaquetado">
+		<echo msg="Copiando archivos a la zona de despliegue"/>
+		<copy todir="/var/www/html" >
+			<fileset dir="${buildDir}">
+				<include name="**/*.zip" />
+			</fileset>
+		</copy>
+		<unzip todir="/var/www/html" forceExtract="true">
+			<fileset dir="/var/www/html">
+				<include name="**/*.zip"/>
+			</fileset>
+		</unzip>
 	</target>
 
 </project>
