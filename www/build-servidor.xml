@@ -46,8 +46,6 @@
 				</fileset>
 			</batchtest>
 		</phpunit>
-
-		
 	</target>
 
 	<target name="phpDocumentor" depends="Cobertura">
