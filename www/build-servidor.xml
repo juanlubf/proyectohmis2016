@@ -53,7 +53,7 @@
 	<target name="phpDocumentor" depends="Cobertura">
 		<mkdir dir="docs"/>
 		<echo msg="Generando documentacion"/>
-		<exec command="phpdoc -d ./reports -t ./docs --template responsive" />
+		<exec command="phpdoc -d src/ -t docs/ --template responsive" />
 	</target>
 
 	<target name="Empaquetado" depends="phpDocumentor">

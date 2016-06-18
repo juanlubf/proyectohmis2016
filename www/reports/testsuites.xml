@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="AllTests" tests="1" assertions="1" failures="0" errors="0" time="0.006977">
-    <testsuite name="PasswordTest" file="C:\xampp\htdocs\www\tests\PasswordTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.006977">
-      <testcase name="testValidLength" class="PasswordTest" file="C:\xampp\htdocs\www\tests\PasswordTest.php" line="6" assertions="1" time="0.006977"/>
+  <testsuite name="AllTests" tests="1" assertions="1" failures="0" errors="0" time="0.005051">
+    <testsuite name="PasswordTest" file="C:\xampp\htdocs\www\tests\PasswordTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.005051">
+      <testcase name="testValidLength" class="PasswordTest" file="C:\xampp\htdocs\www\tests\PasswordTest.php" line="9" assertions="1" time="0.005051"/>
     </testsuite>
   </testsuite>
 </testsuites>
