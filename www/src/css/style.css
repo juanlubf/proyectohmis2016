@@ -116,7 +116,7 @@ body {
   width: 640px;
 }
 
-.login {
+.login, .pAdmin {
   position: relative;
   margin: 0 auto;
   padding: 20px 20px 20px;
@@ -126,7 +126,10 @@ body {
   -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
 }
-.login:before {
+.pAdmin {
+  width: 450px;
+}
+.login:before, .pAdmin:before {
   content: '';
   position: absolute;
   top: -8px;
@@ -137,7 +140,7 @@ body {
   background: rgba(0, 0, 0, 0.08);
   border-radius: 4px;
 }
-.login h1 {
+.login h1, .pAdmin h1 {
   margin: -20px -20px 21px;
   line-height: 40px;
   font-size: 15px;
@@ -155,8 +158,11 @@ body {
   -webkit-box-shadow: 0 1px whitesmoke;
   box-shadow: 0 1px whitesmoke;
 }
-.login p {
+.login p, .pAdmin p {
   margin: 20px 0 0;
+}
+.login label {
+  color: #bd362f;
 }
 .login p:first-child {
   margin-top: 0;
@@ -234,7 +240,7 @@ input[type=text]:focus, input[type=password]:focus {
   outline-offset: 0;
 }
 
-input[type=submit] {
+input[type=submit], input[type=button] {
   padding: 0 18px;
   height: 29px;
   font-size: 12px;
@@ -265,4 +271,7 @@ input[type=submit]:active {
 
 .lt-ie9 input[type=text], .lt-ie9 input[type=password] {
   line-height: 34px;
+}
+.addPlaza {
+  display: none;
 }

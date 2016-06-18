@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1466267383">
+  <project timestamp="1466267383">
+    <file name="C:\xampp\htdocs\www\src/Formulario.php">
+      <metrics loc="6" ncloc="0" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="C:\xampp\htdocs\www\src/Password.php">
+      <class name="Password" namespace="global">
+        <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </class>
+      <line num="8" type="method" name="validLength" crap="2" count="1"/>
+      <line num="9" type="stmt" count="1"/>
+      <line num="10" type="stmt" count="1"/>
+      <metrics loc="11" ncloc="11" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+    </file>
+    <file name="C:\xampp\htdocs\www\src/Utilidades/conexionBD.php">
+      <line num="2" type="stmt" count="0"/>
+      <line num="4" type="stmt" count="0"/>
+      <line num="5" type="stmt" count="0"/>
+      <metrics loc="6" ncloc="4" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="3" coveredelements="0"/>
+    </file>
+    <file name="C:\xampp\htdocs\www\src/Utilidades/variablesBD.php">
+      <line num="4" type="stmt" count="0"/>
+      <line num="5" type="stmt" count="0"/>
+      <line num="6" type="stmt" count="0"/>
+      <line num="7" type="stmt" count="0"/>
+      <metrics loc="7" ncloc="5" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="4" coveredelements="0"/>
+    </file>
+    <file name="C:\xampp\htdocs\www\src/index.php">
+      <line num="1" type="stmt" count="0"/>
+      <line num="2" type="stmt" count="0"/>
+      <line num="3" type="stmt" count="0"/>
+      <line num="4" type="stmt" count="0"/>
+      <line num="5" type="stmt" count="0"/>
+      <line num="6" type="stmt" count="0"/>
+      <line num="7" type="stmt" count="0"/>
+      <line num="8" type="stmt" count="0"/>
+      <line num="9" type="stmt" count="0"/>
+      <line num="10" type="stmt" count="0"/>
+      <line num="11" type="stmt" count="0"/>
+      <line num="12" type="stmt" count="0"/>
+      <line num="13" type="stmt" count="0"/>
+      <line num="14" type="stmt" count="0"/>
+      <line num="15" type="stmt" count="0"/>
+      <line num="16" type="stmt" count="0"/>
+      <line num="17" type="stmt" count="0"/>
+      <line num="18" type="stmt" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <line num="27" type="stmt" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <line num="29" type="stmt" count="0"/>
+      <line num="30" type="stmt" count="0"/>
+      <line num="34" type="stmt" count="0"/>
+      <line num="35" type="stmt" count="0"/>
+      <metrics loc="35" ncloc="35" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="32" coveredstatements="0" elements="32" coveredelements="0"/>
+    </file>
+    <file name="C:\xampp\htdocs\www\src/panelAdmin.php">
+      <line num="1" type="stmt" count="0"/>
+      <line num="2" type="stmt" count="0"/>
+      <line num="3" type="stmt" count="0"/>
+      <line num="4" type="stmt" count="0"/>
+      <line num="5" type="stmt" count="0"/>
+      <line num="6" type="stmt" count="0"/>
+      <line num="7" type="stmt" count="0"/>
+      <line num="8" type="stmt" count="0"/>
+      <line num="9" type="stmt" count="0"/>
+      <line num="10" type="stmt" count="0"/>
+      <line num="11" type="stmt" count="0"/>
+      <line num="12" type="stmt" count="0"/>
+      <line num="15" type="stmt" count="0"/>
+      <line num="16" type="stmt" count="0"/>
+      <line num="17" type="stmt" count="0"/>
+      <line num="18" type="stmt" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <line num="29" type="stmt" count="0"/>
+      <line num="30" type="stmt" count="0"/>
+      <line num="31" type="stmt" count="0"/>
+      <line num="32" type="stmt" count="0"/>
+      <line num="34" type="stmt" count="0"/>
+      <line num="35" type="stmt" count="0"/>
+      <metrics loc="35" ncloc="35" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="0" elements="30" coveredelements="0"/>
+    </file>
+    <file name="C:\xampp\htdocs\www\src/panelRegistro.php">
+      <line num="1" type="stmt" count="0"/>
+      <line num="2" type="stmt" count="0"/>
+      <line num="3" type="stmt" count="0"/>
+      <line num="4" type="stmt" count="0"/>
+      <line num="5" type="stmt" count="0"/>
+      <line num="6" type="stmt" count="0"/>
+      <line num="7" type="stmt" count="0"/>
+      <line num="8" type="stmt" count="0"/>
+      <line num="9" type="stmt" count="0"/>
+      <line num="10" type="stmt" count="0"/>
+      <line num="11" type="stmt" count="0"/>
+      <line num="12" type="stmt" count="0"/>
+      <line num="14" type="stmt" count="0"/>
+      <line num="15" type="stmt" count="0"/>
+      <line num="16" type="stmt" count="0"/>
+      <line num="17" type="stmt" count="0"/>
+      <line num="18" type="stmt" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <line num="27" type="stmt" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <line num="29" type="stmt" count="0"/>
+      <line num="30" type="stmt" count="0"/>
+      <line num="31" type="stmt" count="0"/>
+      <line num="33" type="stmt" count="0"/>
+      <line num="34" type="stmt" count="0"/>
+      <line num="35" type="stmt" count="0"/>
+      <line num="36" type="stmt" count="0"/>
+      <line num="37" type="stmt" count="0"/>
+      <line num="38" type="stmt" count="0"/>
+      <line num="39" type="stmt" count="0"/>
+      <line num="40" type="stmt" count="0"/>
+      <line num="41" type="stmt" count="0"/>
+      <line num="42" type="stmt" count="0"/>
+      <line num="43" type="stmt" count="0"/>
+      <line num="44" type="stmt" count="0"/>
+      <line num="45" type="stmt" count="0"/>
+      <line num="46" type="stmt" count="0"/>
+      <line num="47" type="stmt" count="0"/>
+      <line num="48" type="stmt" count="0"/>
+      <line num="49" type="stmt" count="0"/>
+      <line num="50" type="stmt" count="0"/>
+      <line num="51" type="stmt" count="0"/>
+      <line num="52" type="stmt" count="0"/>
+      <line num="53" type="stmt" count="0"/>
+      <line num="54" type="stmt" count="0"/>
+      <line num="55" type="stmt" count="0"/>
+      <line num="57" type="stmt" count="0"/>
+      <line num="58" type="stmt" count="0"/>
+      <metrics loc="58" ncloc="58" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="55" coveredstatements="0" elements="55" coveredelements="0"/>
+    </file>
+    <file name="C:\xampp\htdocs\www\src/panelUsuario.php">
+      <line num="1" type="stmt" count="0"/>
+      <line num="2" type="stmt" count="0"/>
+      <line num="3" type="stmt" count="0"/>
+      <line num="4" type="stmt" count="0"/>
+      <line num="5" type="stmt" count="0"/>
+      <line num="6" type="stmt" count="0"/>
+      <line num="7" type="stmt" count="0"/>
+      <line num="8" type="stmt" count="0"/>
+      <line num="9" type="stmt" count="0"/>
+      <line num="10" type="stmt" count="0"/>
+      <line num="11" type="stmt" count="0"/>
+      <line num="12" type="stmt" count="0"/>
+      <line num="14" type="stmt" count="0"/>
+      <line num="15" type="stmt" count="0"/>
+      <line num="16" type="stmt" count="0"/>
+      <line num="17" type="stmt" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="27" type="stmt" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <metrics loc="27" ncloc="27" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="0" elements="24" coveredelements="0"/>
+    </file>
+    <file name="C:\xampp\htdocs\www\src/scriptLogin.php">
+      <line num="9" type="stmt" count="0"/>
+      <line num="11" type="stmt" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <line num="27" type="stmt" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <line num="29" type="stmt" count="0"/>
+      <line num="30" type="stmt" count="0"/>
+      <line num="31" type="stmt" count="0"/>
+      <line num="32" type="stmt" count="0"/>
+      <line num="33" type="stmt" count="0"/>
+      <line num="34" type="stmt" count="0"/>
+      <line num="35" type="stmt" count="0"/>
+      <line num="37" type="stmt" count="0"/>
+      <line num="38" type="stmt" count="0"/>
+      <line num="39" type="stmt" count="0"/>
+      <line num="40" type="stmt" count="0"/>
+      <line num="41" type="stmt" count="0"/>
+      <line num="42" type="stmt" count="0"/>
+      <line num="43" type="stmt" count="0"/>
+      <line num="44" type="stmt" count="0"/>
+      <line num="45" type="stmt" count="0"/>
+      <line num="46" type="stmt" count="0"/>
+      <line num="47" type="stmt" count="0"/>
+      <line num="48" type="stmt" count="0"/>
+      <line num="50" type="stmt" count="0"/>
+      <line num="52" type="stmt" count="0"/>
+      <line num="53" type="stmt" count="0"/>
+      <line num="54" type="stmt" count="0"/>
+      <line num="55" type="stmt" count="0"/>
+      <line num="57" type="stmt" count="0"/>
+      <metrics loc="58" ncloc="28" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="37" coveredstatements="0" elements="37" coveredelements="0"/>
+    </file>
+    <file name="C:\xampp\htdocs\www\src/scriptLogout.php">
+      <line num="9" type="stmt" count="0"/>
+      <line num="10" type="stmt" count="0"/>
+      <line num="11" type="stmt" count="0"/>
+      <metrics loc="11" ncloc="5" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="3" coveredelements="0"/>
+    </file>
+    <file name="C:\xampp\htdocs\www\src/scriptParking.php">
+      <line num="9" type="stmt" count="0"/>
+      <line num="11" type="stmt" count="0"/>
+      <line num="12" type="stmt" count="0"/>
+      <line num="13" type="stmt" count="0"/>
+      <metrics loc="12" ncloc="6" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="3" coveredelements="0"/>
+    </file>
+    <file name="C:\xampp\htdocs\www\src/scriptRegistro.php">
+      <line num="9" type="stmt" count="0"/>
+      <line num="10" type="stmt" count="0"/>
+      <line num="11" type="stmt" count="0"/>
+      <line num="12" type="stmt" count="0"/>
+      <line num="14" type="stmt" count="0"/>
+      <line num="15" type="stmt" count="0"/>
+      <line num="16" type="stmt" count="0"/>
+      <line num="17" type="stmt" count="0"/>
+      <metrics loc="17" ncloc="11" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="8" coveredelements="0"/>
+    </file>
+    <metrics files="12" loc="283" ncloc="225" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="201" coveredstatements="2" elements="202" coveredelements="3"/>
+  </project>
+</coverage>
