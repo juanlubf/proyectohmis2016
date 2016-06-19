@@ -4,38 +4,29 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://maquina02-3b76vbs5.cloudapp.net/" />
-<title>LoginCorrectoAdminTest</title>
+<title>AnadirEdificiosTest</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">LoginCorrectoAdminTest</td></tr>
+<tr><td rowspan="1" colspan="3">AnadirEdificiosTest</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/html/</td>
+	<td>/html/panelAdmin.php</td>
 	<td></td>
 </tr>
 <tr>
-	<td>type</td>
-	<td>name=user</td>
-	<td>admin</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=password</td>
-	<td>admin</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>name=login</td>
+	<td>click</td>
+	<td>css=input[type=&quot;button&quot;]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=h1</td>
-	<td>Configuración del parking</td>
+	<td>css=p.mostrar</td>
+	<td>Plantas <br /><br />Plazas por planta</td>
 </tr>
+
 </tbody></table>
 </body>
 </html>
