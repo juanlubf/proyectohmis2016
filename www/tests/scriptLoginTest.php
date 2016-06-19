@@ -8,13 +8,12 @@
  */
 global $conexion;
 include_once  (dirname(dirname(__FILE__)).DIRECTORY_SEPARATOR.'src'.DIRECTORY_SEPARATOR.'scriptLogin.php');
-$cadenaSQL1 = "INSERT INTO user (idUser,password,nombre,esAdmin) VALUES (NULL, 'admin', 'testAdmin', '1')";
-mysqli_query($conexion, $cadenaSQL1);
+
 
 class scriptLoginTest extends PHPUnit_Framework_TestCase
 {
     public function testAdmin(){
-        $u = "testAdmin";
+        $u = "admin";
         $p = "admin";
         $esAdmin = TRUE;
         $userid = 999;
@@ -41,7 +40,5 @@ class scriptLoginTest extends PHPUnit_Framework_TestCase
     }
 }
 
-$cadenaSQL2 ="DELETE FROM user WHERE nombre = 'testAdmin' AND password = 'admin' ";
-mysqli_query($conexion, $cadenaSQL2);
 
 ?>
