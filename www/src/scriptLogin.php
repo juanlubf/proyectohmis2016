@@ -39,9 +39,9 @@ if(!isset($_SESSION['userid'])) { //para saber si existe o no ya la variable de 
     if(isset($_POST['login'])) { //Si la primera condición no pasa, haremos otra preguntando si el boton de login fue presionado
         if(verificar_login($_POST['user'],$_POST['password'],$userid, $esAdmin) == 1) { //Si el boton fue presionado llamamos a la función verificar_login() dentro de otra condición preguntando si resulta verdadero y le pasamos los valores ingresados como parámetros.
             /*Si el login fue correcto, registramos la variable de sesión.*/
-            //if (isset($_POST['remember_me'])){
+            if (isset($_POST['remember_me'])){
                 $_SESSION['userid'] = $userid;
-            //}
+            }
             if ($esAdmin)
                 header('location: panelAdmin.php');
             else
