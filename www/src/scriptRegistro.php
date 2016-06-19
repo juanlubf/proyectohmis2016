@@ -13,5 +13,6 @@ if ($_POST) {
 
     $cadenaSQL = "insert into User (nombre, password, esAdmin) values ('$a', '$p', FALSE);";
     $resultado = mysqli_query($conexion, $cadenaSQL);
+    $fila = $resultado->fetch_object();
     header('location: panelUsuario.php');
 }
