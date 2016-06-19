@@ -14,8 +14,8 @@ mysqli_query($conexion, $cadenaSQL1);
 class scriptLoginTest extends PHPUnit_Framework_TestCase
 {
     public function testAdmin(){
-        $u = " testAdmin ";
-        $p = " admin ";
+        $u = "testAdmin";
+        $p = "admin";
         $esAdmin = TRUE;
         $userid = 999;
         $res=1;
