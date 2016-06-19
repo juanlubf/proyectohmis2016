@@ -12,7 +12,11 @@ if (isset($_REQUEST["desde"])){
 if (isset($_REQUEST["hasta"])){
     $hasta = $_REQUEST["hasta"];
 }
+if (isset($_REQUEST["tipoV"])){
+    $tipoV = $_REQUEST["tipoV"];
+}
 include_once "scriptBuscar.php";
+
 ?>
 <html>
 <head>
@@ -28,11 +32,38 @@ include_once "scriptBuscar.php";
     <!--[if lt IE 9]<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
-<?php
-echo $fecha;
-echo "<br/>";
-echo $desde;
-?>
-
+<section class="container">
+    <div class="pAdmin">
+        <form id="myForm" method="post" action="resultadoConfirmarReserva.php" enctype="multipart/form-data">
+        <?php
+        if ($devolver[0] != null){
+            echo "<h1> Existen plazas libres </h1>";
+            echo "<h2> ¿Desea realizar una reserva?</h2>";
+            $x = 0;
+            $i = 0;
+            foreach ($array as $value) {
+                $x = $i % 3;
+                switch ($x) {
+                    case 0:
+                        echo "Deck : [".$value."]<br/>";
+                        break;
+                    case 1:
+                        echo "Planta : [".$value."]<br/>";
+                        break;
+                    case 2:
+                        echo "Plaza : [".$value."]<br/>";
+                        break;
+                }
+                $i++;
+            }
+        }else{
+            echo "<h1> No hay plazas libres </h1>";
+        }
+        ?>
+            <p><input type="submit" value="Confirmar" style="float: right"></p>
+            <p><input type="button" name="volver" value="Volver" onclick="location.href='scriptLogout.php';"></p>
+        </form>
+    </div>
+</section>
 </body>
 </html>

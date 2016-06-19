@@ -1,12 +1,13 @@
 <?php
 session_start();
+include_once "scriptTiposVehiculos.php";
 ?>
 
 <!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> 
-<html lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -112,6 +113,25 @@ global $suma;?>
             <p>
                 <label>Hasta</label>
                 <input onclick="minTimer()"  name="hasta" id="hasta" type="text" class="time" alt="hasta"  style="float:right"  required/>
+            </p>
+            <br/>
+            <p>
+                <label>Tipo Vehiculo</label>
+                <select onclick="minTimer()"  name="tipoV" id="tipoV" alt="Tipo de vehiculo"  style="float:right"  required/>
+                    <?php
+                    $x = 0;
+                    $id ="";
+                    foreach ($array as $value) {
+                        if ($x % 2 == 1) {
+                            echo "<option value='".$id."'>".$value."</option>";
+  
+                        }else{
+                            $id = $value;
+                        }
+                        $x++;
+                    }
+                    ?>
+                </select>
             </p>
             <br/>
 
