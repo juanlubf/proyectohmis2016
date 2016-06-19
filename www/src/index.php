@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="css/style.css">
   <!--[if lt IE 9]<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
+<?php include_once "scriptLogin.php";
+global $error;?>
 <body>
   <section class="container">
     <div class="login">
@@ -16,6 +18,7 @@
       <form method="post" action="">
         <p><input type="text" name="user" value="" placeholder="Usuario"></p>
         <p><input type="password" name="password" value="" placeholder="Contraseña"></p>
+        <?php if($error) echo "<label>Usuario o contraseña incorrectos</label>";?>
         <p class="remember_me">
           <label>
             <input type="checkbox" name="remember_me" id="remember_me">
@@ -28,8 +31,5 @@
       </form>
     </div>
   </section>
-
-  <?php include_once "scriptLogin.php";  ?>
-
 </body>
 </html>

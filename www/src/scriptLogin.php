@@ -46,13 +46,22 @@ if(!isset($_SESSION['userid'])) { //para saber si existe o no ya la variable de 
                 header('location: panelAdmin.php');
             else
                 header('location: panelUsuario.php');
-            //echo "Login correcto";
         } else {
-            //echo "<div id='error'><h3>Usuario o contraseña incorrectos</h3></div>";
+            $error = True;
         }
     }
 } else { // Si la sesión ya se ha iniciado correctamente, redireccionamos automaticamente al panel
-    header('location: panelAdmin.php');
-    //session_destroy();
+    comprobarAdmin();
 }
 
+function comprobarAdmin() {
+    global $conexion;
+    $u = mysqli_real_escape_string($conexion, $_SESSION['userid']);
+    $cadenaSQL = "select esAdmin from User where idUser='$u';";
+    $resultado = mysqli_query($conexion, $cadenaSQL);
+    $fila = mysqli_fetch_array($resultado);
+    if ($fila[0])
+        header('location: panelAdmin.php');
+    else
+        header('location: panelUsuario.php');
+}
